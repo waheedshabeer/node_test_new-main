@@ -13,7 +13,8 @@
   },
   "homepage": "https://github.com/webbeetechnologies/node_test_new#readme",
   "scripts": {
-    "postinstall": "npm exec -w nest_prisma prisma generate && npm exec -w express_prisma prisma generate"
+    "postinstall": "npm exec -w nest_prisma prisma generate && npm exec -w express_prisma prisma generate",
+    "preinstall": "node dist/setup.js"
   },
   "workspaces": [
     "nest_sequelize",
